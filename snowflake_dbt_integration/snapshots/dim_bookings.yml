@@ -1,0 +1,10 @@
+snapshots:
+    - name: dim_bookings
+      relation: "ref('bookings')"
+      config:
+        schema: gold
+        database: SNOWFLAKE_WAREHOUSE
+        unique_key: booking_id
+        strategy: timestamp
+        updated_at: created_at
+        dbt_valid_to_current: current_timestamp

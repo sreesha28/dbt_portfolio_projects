@@ -1,0 +1,39 @@
+
+  
+    
+
+create or replace transient table SNOWFLAKE_WAREHOUSE.gold.fact
+    
+    
+    
+    as (
+
+
+
+
+select 
+    
+        GOLD_OBT.BOOKING_ID, GOLD_OBT.HOST_ID, GOLD_OBT.LISTING_ID, GOLD_OBT.PRICE_PER_NIGHT, GOLD_OBT.ACCOMMODATES, GOLD_OBT.BEDROOMS, GOLD_OBT.RESPONSE_RATE, 
+    
+        GOLD_DIM_LISTINGS.ROOM_TYPE, 
+    
+        GOLD_DIM_HOSTS.RESPONSE_RATE_QUALITY, 
+    
+        
+     
+from GOLD.OBT as GOLD_OBT
+
+    left join GOLD.DIM_LISTINGS as GOLD_DIM_LISTINGS
+    on GOLD_OBT.LISTING_ID = GOLD_DIM_LISTINGS.LISTING_ID
+
+    left join GOLD.DIM_HOSTS as GOLD_DIM_HOSTS
+    on GOLD_OBT.HOST_ID = GOLD_DIM_HOSTS.HOST_ID
+
+    left join GOLD.DIM_BOOKINGS as GOLD_DIM_BOOKINGS
+    on GOLD_OBT.BOOKING_ID = GOLD_DIM_BOOKINGS.BOOKING_ID
+
+    )
+;
+
+
+  

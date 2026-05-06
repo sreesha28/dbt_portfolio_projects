@@ -1,0 +1,10 @@
+snapshots:
+    - name: dim_hosts
+      relation: "ref('hosts')"
+      config:
+        schema: gold
+        database: SNOWFLAKE_WAREHOUSE
+        unique_key: host_id
+        strategy: timestamp
+        updated_at: created_at
+        dbt_valid_to_current: current_timestamp

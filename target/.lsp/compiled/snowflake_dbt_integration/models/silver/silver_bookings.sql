@@ -1,0 +1,11 @@
+
+
+Select
+    BOOKING_ID,
+    LISTiNG_ID,
+    NIGHTS_BOOKED,
+    BOOKING_AMOUNT,
+    BOOKING_DATE,
+    BOOKING_STATUS,
+    CREATED_AT
+from SNOWFLAKE_WAREHOUSE.bronze.bronze_bookings

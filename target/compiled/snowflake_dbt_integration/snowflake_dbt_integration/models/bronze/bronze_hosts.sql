@@ -1,0 +1,1 @@
+select * from snowflake_warehouse.staging.hosts
