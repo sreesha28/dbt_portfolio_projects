@@ -1,8 +1,0 @@
-
-
-WITH listings as (
-    SELECT LISTING_ID,HOST_ID,ROOM_TYPE,PRICE_PER_NIGHT,ACCOMMODATES,BEDROOMS ,CREATED_AT from SNOWFLAKE_WAREHOUSE.gold.obt
-
-)
-
-select * from listings

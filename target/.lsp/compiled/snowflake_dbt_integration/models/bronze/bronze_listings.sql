@@ -1,1 +1,0 @@
-select * from snowflake_warehouse.staging.listings
