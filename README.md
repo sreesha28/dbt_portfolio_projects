@@ -76,7 +76,7 @@ AWS_DBT_Snowflake/
 │
 └── snowflake_dbt_integration/         # Main dbt project
     ├── dbt_project.yml                 # dbt project configuration
-    ├── profiles.yml             # Snowflake connection profile
+    ├── profiles.yml                    # Snowflake connection profile
     │
     ├── models/                         # dbt models
     │   ├── sources/
