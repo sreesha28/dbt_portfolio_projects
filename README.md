@@ -1,4 +1,4 @@
-# 🏠 Snowflake to DBT integration  Data Engineering Project
+# 🏠 AWS->Snowflake-> DBT->Snowflake  Integration Data Engineering Project
 
 ## 📋 Overview
 
