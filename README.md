@@ -8,6 +8,7 @@ The pipeline processes Hotel listings, bookings, and hosts data through a medall
 
 ![alt text](image.png)
 ## 🏗️ Architecture
+![alt text](image-1.png)
 
 ### Data Flow
 ```
